@@ -2,7 +2,7 @@ FROM debian:stable
 
 RUN apt-get update \
     # Install envsubst and dependencies
-    && apt-get install -y apt-transport-https gnupg curl git unzip python3=3.7.3-1 python3-pip gettext-base \
+    && apt-get install -y apt-transport-https gnupg curl git unzip python3=3.7.3-1 python3-pip gettext-base jq \
 
     # Install KubeCTL
     && curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg \
